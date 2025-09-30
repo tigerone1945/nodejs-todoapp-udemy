@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodejsとMongoDBを使ったTodoアプリ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <form class="task-form">
+        <h4>NodejsでTodoアプリ</h4>
+        <div class="form-control">
+            <input type="text" name="name" class="task-input" placeholder="例: Nodejsの勉強"/>
+            <button type="submit" class="btn submit-btn">送信</button>
+        </div>
+        <div class="form-alert" id="form-alert"></div>
+    </form>
+    <section class="tasks-container">
+        <div class="tasks"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
