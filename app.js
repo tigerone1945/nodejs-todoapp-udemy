@@ -17,7 +17,7 @@ app.use(express.static('./public'));
 
 const start = async () => {
   try {
-    await connectDB(process.env.MONGODB_URI);
+    await connectDB(process.env.MONGO_RENDER_URL || process.env.MONGODB_URI);
     app.listen(PORT, () => console.log(`サーバーがポート${PORT}で起動しました`));
   } catch (error) {
     console.error('データベース接続エラー:', error);
